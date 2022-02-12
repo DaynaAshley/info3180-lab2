@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="box">
+<div class="page">
+<div class="heading">
+    <div id="info">
+        <img src="{{ url_for('static', filename='image.jpg') }}">
+        <h1>Dayna-Ashley Roberts</h1>
+        <h5>@droberts</h5>
+        <h5>Portmore, Jamaica</h5>
+        <h5>Joined {{date}}</h5>
+    </div>
+</div>
+
+    <p id="desc">I am smart and talented young woman who loves 
+        website design and development. Contact me if you'd like
+        to work together on a new project.
+    </p>
+
+<div id="likes">
+    <div>
+        <h3>7</h3>
+        <p>Posts</p>
+    </div>
+
+    <div >
+        <h3>100</h3>
+        <p>Following</p>
+    </div>
+    
+    <div>
+        <h3>250</h3>
+        <p>Followers</p>
+    </div>
+
+    <div></div>
+    
+    <button type="submit" class="btn">Follow</button>
+
+</div>
+
+</div>
+</div>
+{% endblock %}
